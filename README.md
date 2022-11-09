@@ -18,7 +18,7 @@
 >
 > ▫️: [Отчет о результатах тестирования в Allure Report](#-отчет-о-результатах-тестирования-в-allure-report)
 >
-> :heavy_check_mark: [Интеграция с Allure TestOps](#-интеграция-с-allure-testops)
+> :- [x] [Интеграция с Allure TestOps](#-интеграция-с-allure-testops)
 >
 > :heavy_check_mark: [Интеграция с Jira](#-интеграция-с-jira)
 >
@@ -31,7 +31,7 @@
 <p  align="center"
 
 <code><img width="5%" title="IntelliJ IDEA" src="images/logo/Idea.svg"></code>
-<code><img width="5%" title="Java" src="images/logo/Java.svg"></code>
+<code><img width="5%" title="Java" src="images/icons/Java.svg"></code>
 <code><img width="5%" title="Selenoid" src="images/logo/Selenoid.svg"></code>
 <code><img width="5%" title="Selenide" src="images/logo/Selenide.svg"></code>
 <code><img width="5%" title="Gradle" src="images/logo/Gradle.svg"></code>
