@@ -30,19 +30,19 @@
 
 <p  align="center"
 
-<code><img width="5%" title="IntelliJ IDEA" src="images/logo/Idea.svg"></code>
-<code><img width="5%" title="Java" src="images/logo/Java.svg"></code>
-<code><img width="5%" title="Selenoid" src="images/logo/Selenoid.svg"></code>
-<code><img width="5%" title="Selenide" src="images/logo/Selenide.svg"></code>
-<code><img width="5%" title="Gradle" src="images/logo/Gradle.svg"></code>
-<code><img width="5%" title="Junit5" src="images/logo/Junit5.svg"></code>
-<code><img width="5%" title="GitHub" src="images/logo/GitHub.svg"></code>
-<code><img width="5%" title="Allure Report" src="images/logo/Allure.svg"></code>
-<code><img width="5%" title="Allure TestOps" src="images/logo/Allure_TO.svg"></code>
-<code><img width="5%" title="RestAssured" src="images/logo/RestAssured.svg"></code>
-<code><img width="5%" title="Jenkins" src="images/logo/Jenkins.svg"></code>
-<code><img width="5%" title="Jira" src="images/logo/Java.svg"></code>
-<code><img width="5%" title="Telegram" src="images/logo/Telegram.svg"></code>
+<code><img width="5%" title="IntelliJ IDEA" src="images/logo/IntelijIDEA-logo.svg"></code>
+<code><img width="5%" title="Java" src="images/logo/Java-logo.svg"></code>
+<code><img width="5%" title="Selenoid" src="images/logo/Selenoid-logo.svg"></code>
+<code><img width="5%" title="Selenide" src="images/logo/Selenide-logo.svg"></code>
+<code><img width="5%" title="Gradle" src="images/logo/Gradle-logo.svg"></code>
+<code><img width="5%" title="Junit5" src="images/logo/Junit5-logo.svg"></code>
+<code><img width="5%" title="GitHub" src="images/logo/GitHub-logo.svg"></code>
+<code><img width="5%" title="Allure Report" src="images/logo/AllureReport-logo.svg"></code>
+<code><img width="5%" title="Allure TestOps" src="images/logo/AllureTO-logo.svg"></code>
+<code><img width="5%" title="RestAssured" src="images/logo/RestAssured-logo.svg"></code>
+<code><img width="5%" title="Jenkins" src="images/logo/Jenkins-logo.svg"></code>
+<code><img width="5%" title="Jira" src="images/logo/Jira-logo.svg"></code>
+<code><img width="5%" title="Telegram" src="images/logo/Telegram-logo.svg"></code>
 </p>
 
 > *В данном проекте автотесты написаны на <code><strong>*Java*</strong></code> с использованием фреймворка <code><strong>*Selenide*</strong></code> для UI-тестов.*
