@@ -26,17 +26,17 @@
 >
 > ▫️ [Пример запуска теста в Selenoid](#-пример-запуска-теста-в-selenoid)
 
-## :technologist: Технологии и инструменты
+## 🧿Технологии и инструменты
 
 <p  align="center"
 
+<code><img width="5%" title="GitHub" src="images/logo/GitHub-logo.svg"></code>
 <code><img width="5%" title="IntelliJ IDEA" src="images/logo/IntelijIDEA-logo.svg"></code>
 <code><img width="5%" title="Java" src="images/logo/Java-logo.svg"></code>
-<code><img width="5%" title="Selenoid" src="images/logo/Selenoid-logo.svg"></code>
 <code><img width="5%" title="Selenide" src="images/logo/Selenide-logo.svg"></code>
 <code><img width="5%" title="Gradle" src="images/logo/Gradle-logo.svg"></code>
 <code><img width="5%" title="Junit5" src="images/logo/Junit5-logo.svg"></code>
-<code><img width="5%" title="GitHub" src="images/logo/GitHub-logo.svg"></code>
+<code><img width="5%" title="Selenoid" src="images/logo/Selenoid-logo.svg"></code>
 <code><img width="5%" title="Allure Report" src="images/logo/AllureReport-logo.svg"></code>
 <code><img width="5%" title="Allure TestOps" src="images/logo/AllureTO-logo.svg"></code>
 <code><img width="5%" title="RestAssured" src="images/logo/RestAssured-logo.svg"></code>
