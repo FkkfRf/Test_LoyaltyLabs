@@ -6,32 +6,32 @@
 ### <a target="_blank" href="https://loylabs.ru/">© Loyalty Labs 2013-2020</a>  
 
 ![Logo-Sloj.svg](images/icons/Logo-Sloj.svg)
-## :cyclone:	Содержание
+# :cyclone:	Содержание
 
 > ▫️ [Технологии и инструменты](#technologist-технологии-и-инструменты)
 >
-> ▫️: [Реализованы проверки](#bookmark_tabs-реализованы-проверки)
+> ▫️ [Реализованы проверки](#bookmark_tabs-реализованы-проверки)
 >
-> ▫️: [Запуск тестов из терминала](#computer-Запуск-тестов-из-терминала)
+> ▫️ [Запуск тестов из терминала](#computer-Запуск-тестов-из-терминала)
 >
-> ▫️: [Запуск тестов в Jenkins](#-запуск-тестов-в-jenkins)
+> ▫️ [Запуск тестов в Jenkins](#-запуск-тестов-в-jenkins)
 >
-> ▫️: [Отчет о результатах тестирования в Allure Report](#-отчет-о-результатах-тестирования-в-allure-report)
+> ▫️ [Отчет о результатах тестирования в Allure Report](#-отчет-о-результатах-тестирования-в-allure-report)
 >
-> :- [x] [Интеграция с Allure TestOps](#-интеграция-с-allure-testops)
+> ▫️ [Интеграция с Allure TestOps](#-интеграция-с-allure-testops)
 >
-> :heavy_check_mark: [Интеграция с Jira](#-интеграция-с-jira)
+> ▫️ [Интеграция с Jira](#-интеграция-с-jira)
 >
-> :heavy_check_mark: [Уведомления в Telegram с использованием бота](#-уведомления-в-telegram-с-использованием-бота)
+> ▫️ [Уведомления в Telegram с использованием бота](#-уведомления-в-telegram-с-использованием-бота)
 >
-> :heavy_check_mark: [Пример запуска теста в Selenoid](#-пример-запуска-теста-в-selenoid)
+> ▫️ [Пример запуска теста в Selenoid](#-пример-запуска-теста-в-selenoid)
 
 ## :technologist: Технологии и инструменты
 
 <p  align="center"
 
 <code><img width="5%" title="IntelliJ IDEA" src="images/logo/Idea.svg"></code>
-<code><img width="5%" title="Java" src="images/icons/Java.svg"></code>
+<code><img width="5%" title="Java" src="images/logo/Java.svg"></code>
 <code><img width="5%" title="Selenoid" src="images/logo/Selenoid.svg"></code>
 <code><img width="5%" title="Selenide" src="images/logo/Selenide.svg"></code>
 <code><img width="5%" title="Gradle" src="images/logo/Gradle.svg"></code>
