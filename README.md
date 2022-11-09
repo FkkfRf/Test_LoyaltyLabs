@@ -1,6 +1,7 @@
 ### ДЗ:
 # Проект по автоматизации тестирования сайта компании Loyalty Labs
-
+![LoyLabs-Logo.svg](images/icons/LoyLabs-Logo.svg)
+<a target="_blank" href="https://loylabs.ru/">© Loyalty Labs 2013-2020</a>
 ## :cherry_blossom:	Содержание
 
 > :heavy_check_mark: [Технологии и инструменты](#technologist-технологии-и-инструменты)
