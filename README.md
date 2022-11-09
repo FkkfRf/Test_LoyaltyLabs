@@ -1,9 +1,10 @@
 ### ДЗ:
 # Проект по автоматизации тестирования сайта компании Loyalty Labs
 
+![Logo-LoyLabs.svg](images/icons/Logo-LoyLabs.svg)
+### <a target="_blank" href="https://loylabs.ru/">© Loyalty Labs 2013-2020</a>  
+
 ![Logo-Sloj.svg](images/icons/Logo-Sloj.svg)
-) 
-### <a target="_blank" href="https://loylabs.ru/">© Loyalty Labs 2013-2020</a>  ![Logo-LoyLabs.svg](images/icons/Logo-LoyLabs.svg)
 ## :cyclone:	Содержание
 
 > :heavy_check_mark: [Технологии и инструменты](#technologist-технологии-и-инструменты)
