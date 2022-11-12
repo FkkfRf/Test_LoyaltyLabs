@@ -35,7 +35,7 @@
 <code><img width="5%" title="Java" src="images/logo/Java-logo.svg"></code>
 <code><img width="5%" title="Selenide" src="images/logo/Selenide-logo.svg"></code>
 <code><img width="5%" title="Gradle" src="images/logo/Gradle-logo.svg"></code>
-<code><img width="5%" title="Junit5" src="images/logo/Junit5-logo.svg"></code>
+<code><img width="5%" title="Junit5" src="images/logo/JUnit5-logo.svg"></code>
 <code><img width="5%" title="Selenoid" src="images/logo/Selenoid-logo.svg"></code>
 <code><img width="5%" title="Allure Report" src="images/logo/AllureReport-logo.svg"></code>
 <code><img width="5%" title="Allure TestOps" src="images/logo/AllureTO-logo.svg"></code>
@@ -44,28 +44,38 @@
 <code><img width="5%" title="Jira" src="images/logo/Jira-logo.svg"></code>
 <code><img width="5%" title="Telegram" src="images/logo/Telegram-logo.svg"></code>
 </p>
+The autotests in this project are written in Java using Selenide framework.
+Gradle - is used as a build automation tool.
+JUnit5 - to execute tests.
+REST Assured - for easy API testing of REST services.
+Jenkins - CI/CD for running tests remotely.
+Selenoid - to remote launching browsers in Docker containers.
+Browserstack - to run mobile tests.
+Android Studio tools, Appium - to tun mobile tests locally in a mobile device emulator.
+Allure Report - for test results visualisation.
+Telegram Bot - for test results notifications.
+Allure TestOps - as Test Management System.
 
-> *В данном проекте автотесты написаны на <code><strong>*Java*</strong></code> с использованием фреймворка <code><strong>*Selenide*</strong></code> для UI-тестов.*
->
->*Для сборки проекта используется <code><strong>*Gradle*</strong></code>.*
->
->*<code><strong>*JUnit 5*</strong></code> используется как фреймворк для модульного тестирования.*
->
->*Запуск тестов выполняется из <code><strong>*Jenkins*</strong></code>.*
->
->*<code><strong>*Selenoid*</strong></code> используется для запуска браузеров в контейнерах  <code><strong>*Docker*</strong></code>.*
->
->*<code><strong>*Allure Report, Allure TestOps, Jira, Telegram Bot*</strong></code> используются для визуализации результатов тестирования.*
+>- *В данном проекте использовались:*
+>- *<code><strong>*Java*</strong></code> с использованием фреймворка <code><strong>*Selenide*</strong></code> - автотесты для UI*
+>- *<code><strong>*Gradle*</strong></code> - сборка проекта*
+>- *<code><strong>*JUnit 5*</strong></code> - фреймворк для модульного тестирования*
+>- *<code><strong>REST Assured</strong></code> - тестирования REST-сервисов*
+>- *<code><strong>*Jenkins*</strong></code> - запуск тестов*
+>- *<code><strong>*Selenoid*</strong></code> - запуска браузеров в контейнерах <code><strong>*Docker*</strong></code>.*
+>- *<code><strong>*Allure Report*</strong></code> - визуализации результатов тестирования*
+>- *<code><strong>*Allure TestOps*</strong></code> - управление тестами*
+>- *<code><strong>*Jira, Telegram Bot*</strong></code> - уведомление  о результатах тестирования*
 
 
 ## :cyclone: Реализованы проверки
 
 ### UI
-> ✓ Тест 1
+#### ✓ Тест 1
 >- [x] *Выполнить поиск компании __Loyalty Labs__*
 >- [x] *Проверить что в названии присутствует текст __'Разработка IT решений'__*
 
-> ✓ Тест 2
+####✓ Тест 2
 >- [x] *Открыть сайт __loylabs.ru__*
 >- [x] *Перейти по порядку на страницы __'Услуги','Проекты','Блог','О компании','Контакты','Услуги'__*
 >- [x] *На странице __'Услуги'__ по порядку нажать на каждый из элементов раздела __'Как мы работаем'__, открыв соответствующую страницу*
