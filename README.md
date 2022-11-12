@@ -139,7 +139,7 @@ Report*</strong></code>, кликнув по которому, откроетс�
 
 ## <img width="4%" title="Allure TestOPS" src="images/logo/AllureTO-logo.svg"> Интеграция с [Allure TestOps](https://allure.autotests.cloud/launch/10145)
 
-### :pushpin: Основной дашборд
+### :cyclone: Основной дашборд
 
 <p align="center">
   <img src="images/screens/Alure_TO.png" alt="dashboards" width="900">
