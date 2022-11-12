@@ -44,17 +44,6 @@
 <code><img width="5%" title="Jira" src="images/logo/Jira-logo.svg"></code>
 <code><img width="5%" title="Telegram" src="images/logo/Telegram-logo.svg"></code>
 </p>
-The autotests in this project are written in Java using Selenide framework.
-Gradle - is used as a build automation tool.
-JUnit5 - to execute tests.
-REST Assured - for easy API testing of REST services.
-Jenkins - CI/CD for running tests remotely.
-Selenoid - to remote launching browsers in Docker containers.
-Browserstack - to run mobile tests.
-Android Studio tools, Appium - to tun mobile tests locally in a mobile device emulator.
-Allure Report - for test results visualisation.
-Telegram Bot - for test results notifications.
-Allure TestOps - as Test Management System.
 
 >- *В данном проекте использовались:*
 >- *<code><strong>*Java*</strong></code> с использованием фреймворка <code><strong>*Selenide*</strong></code> - автотесты для UI*
