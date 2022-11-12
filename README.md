@@ -58,7 +58,8 @@
 >*<code><strong>*Allure Report, Allure TestOps, Jira, Telegram Bot*</strong></code> используются для визуализации результатов тестирования.*
 
 
-##  :cyclone: Реализованы проверки
+###:cyclone: 
+## Реализованы проверки
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UI
 
