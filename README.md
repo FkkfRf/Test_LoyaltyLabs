@@ -105,7 +105,7 @@ gradle clean test
 >
 > <code>BROWSER_SIZE</code> – размер окна браузера, в котором будут выполняться тесты (_по умолчанию - <code>1920x1080</code>_).
 
-##  :cyclone: Запуск тестов в [Jenkins] <img width="4%" title="Jenkins" src="images/logo/Jenkins-logo.svg"> (https://jenkins.autotests.cloud/job/AUTO-638/)
+##  :cyclone: Запуск тестов в  [Jenkins](https://jenkins.autotests.cloud/job/AUTO-638/) <img width="4%" title="Jenkins" src="images/logo/Jenkins-logo.svg"> 
 
 *Для запуска сборки необходимо указать значения параметров и нажать кнопку <code><strong>*Собрать*</strong></code>.*
 
@@ -114,14 +114,14 @@ gradle clean test
 </p>
 
 *После выполнения сборки, в блоке <code><strong>*История сборок*</strong></code> напротив номера сборки появится
-значок <img width="2%" title="Allure Report" src="images/logo/Allure.svg"><code><strong>*Allure
+значок <img width="2%" title="Allure Report" src="images/logo/AllureREport-logo.svg"><code><strong>*Allure
 Report*</strong></code>, кликнув по которому, откроется страница с сформированным html-отчетом.*
 
 <p align="center">
   <img src="images/screens/Jenkins2.png" alt="job" width="1000">
 </p>
 
-## <img width="4%" title="Allure Report" src="images/logo/AllureReport-logo.svg"> Отчет о результатах тестирования в [Allure Report](https://jenkins.autotests.cloud/job/AUTO-638/8/allure/)
+##  :cyclone: Отчет о результатах тестирования в [Allure Report](https://jenkins.autotests.cloud/job/AUTO-638/8/allure/) <img width="4%" title="Allure Report" src="images/logo/AllureReport-logo.svg">
 
 ### ✓ Общая информация
 
@@ -139,7 +139,7 @@ Report*</strong></code>, кликнув по которому, откроетс�
   <img src="images/screens/Alure_Report3.png" alt="Allure Report" width="900">
 </p>
 
-## <img width="4%" title="Allure TestOPS" src="images/logo/AllureTO-logo.svg"> Интеграция с [Allure TestOps](https://allure.autotests.cloud/launch/10145)
+##  :cyclone:  Интеграция с [Allure TestOps](https://allure.autotests.cloud/launch/10145) <img width="4%" title="Allure TestOPS" src="images/logo/AllureTO-logo.svg">
 
 ### ✓ Основной дашборд
 
@@ -153,13 +153,13 @@ Report*</strong></code>, кликнув по которому, откроетс�
   <img src="images/screens/Alure_TO3.png" alt="test cases" width="900">
 </p>
 
-## <img width="4%" title="Jira" src="images/logo/Jira-logo.svg"> Интеграция с [Jira](https://jira.autotests.cloud/browse/AUTO-638)
+##  :cyclone:  Интеграция с [Jira](https://jira.autotests.cloud/browse/AUTO-638) <img width="4%" title="Jira" src="images/logo/Jira-logo.svg">
 
 <p align="center">
   <img src="images/screens/Jira.png" alt="jira" width="1000">
 </p>
 
-## <img width="4%" title="Telegram" src="images/logo/Telegram-logo.svg"> Уведомления в Telegram с использованием бота
+##  :cyclone: Уведомления в Telegram с использованием бота <img width="4%" title="Telegram" src="images/logo/Telegram-logo.svg">
 
 > После завершения сборки специальный бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом о прогоне тестов.
 
@@ -167,7 +167,7 @@ Report*</strong></code>, кликнув по которому, откроетс�
 <img title="Telegram Notifications" src="images/screens/Telegram.png">
 </p>
 
-## <img width="4%" title="Selenoid" src="images/logo/Selenoid-logo.svg"> Пример запуска теста в Selenoid
+##  :cyclone:  Пример запуска теста в Selenoid <img width="4%" title="Selenoid" src="images/logo/Selenoid-logo.svg">
 
 > К каждому тесту в отчете прилагается видео.
 <p align="center">
