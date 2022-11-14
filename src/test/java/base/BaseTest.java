@@ -21,7 +21,7 @@ public class BaseTest {
     static void setUp() {
         String browserName = System.getProperty("browser", "chrome");
         String browserVer = System.getProperty("browserVersion", "100");
-        String browserSize = System.getProperty("browserSize", "1920x1050");
+        String browserSize = System.getProperty("browserSize", "1700x900");
         String remoteUrl = System.getProperty("remote", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
 
         step("Устанавливаем интеграцию с Selenide", () -> {
@@ -38,13 +38,9 @@ public class BaseTest {
             Configuration.browser = browserName;
             Configuration.browserVersion = browserVer;
             Configuration.browserSize = browserSize;
-            Configuration.remote = remoteUrl;
             Configuration.holdBrowserOpen = true;
-            if (remoteUrl != null) {
-                Configuration.remote = remoteUrl;
-            }
         });
-        open(baseUrl);
+
     }
 
     @AfterEach

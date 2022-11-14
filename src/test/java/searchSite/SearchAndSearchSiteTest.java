@@ -6,6 +6,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
@@ -21,7 +22,8 @@ public class SearchAndSearchSiteTest extends BaseSearchTest {
     @Test
     void SearchSiteInGoogle() {
         step("Открываем поисковик google ", () -> {
-            //open("https://www.google.com/");
+
+
         });
         step("проверяем наличие Loyalty Labs в результатах поиска", () -> {
             $("[name=q]").setValue("Loyalty Labs").pressEnter();

@@ -33,17 +33,14 @@ public class BaseSearchTest {
             Configuration.browserCapabilities = capabilities;
         });
         step("Открываем тестируемый сайт в заданной конфигурации браузера", () -> {
-            baseUrl = "https://google.ru/";
+            baseUrl = "https://google.com/";
             Configuration.browser = browserName;
             Configuration.browserVersion = browserVer;
             Configuration.browserSize = browserSize;
-            Configuration.remote = remoteUrl;
             Configuration.holdBrowserOpen = true;
-            if (remoteUrl != null) {
-                Configuration.remote = remoteUrl;
-            }
+            open(baseUrl);
         });
-        open(baseUrl);
+
     }
 
     @AfterEach
