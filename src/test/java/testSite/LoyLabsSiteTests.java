@@ -1,6 +1,7 @@
 package testSite;
 
 import base.BaseTest;
+import com.codeborne.selenide.Configuration;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -11,23 +12,28 @@ import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
+import static io.qameta.allure.Allure.step;
 
 public class LoyLabsSiteTests extends BaseTest{
     @Feature("Проверка открытия страниц сайта через меню.")
     @Story("Открытие страниц через пункты верхнего меню")
-    @Owner("FkkffRf")
+    @Owner("FkkfRf")
     @Severity(SeverityLevel.BLOCKER)
     @Link(url = "https://loylabs.ru/")
     @DisplayName("Выбираем пункты верхнего меню.")
     @ValueSource(strings = {"Услуги","Проекты","Блог","О компании","Контакты"})
     @ParameterizedTest(name = "Выбран {0}")
     void openPagesFromTopMenu(String elementor) {
-        open(baseUrl);
+        step("Открываем тестируемый сайт в заданной конфигурации браузера", () -> {
+            open(baseUrl);
+            Configuration.holdBrowserOpen = true;
+        });
+
         $(byText(String.valueOf(elementor))).click();
         $("h1").shouldHave(text(String.valueOf(elementor)));
     }
     @Story("Открытие страниц раздела 'Как мы работаем' ")
-    @Owner("FkkffRf")
+    @Owner("FkkfRf")
     @Severity(SeverityLevel.BLOCKER)
     @Link(url = "https://loylabs.ru/")
     @DisplayName("Выбираем пункты меню.  ")

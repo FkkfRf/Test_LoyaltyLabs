@@ -12,7 +12,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
-public class SearchAndSearchSiteTest extends BaseSearchTest {
+public class SearchAndOpenSiteTest extends BaseSearchTest {
     @Feature("Поиск сайта фирмы Loyalty Labs. Открытие сайта")
     @Story("Запуск поисковика. Поисковая строка: Loyalty Labs")
     @Owner("FkkffRf")
@@ -21,10 +21,7 @@ public class SearchAndSearchSiteTest extends BaseSearchTest {
     @DisplayName("Поиск сайта loylabs.ru")
     @Test
     void SearchSiteInGoogle() {
-        step("Открываем поисковик google ", () -> {
-
-
-        });
+        step("Открываем поисковик google ", () -> open(baseUrl));
         step("проверяем наличие Loyalty Labs в результатах поиска", () -> {
             $("[name=q]").setValue("Loyalty Labs").pressEnter();
             $("[id=search]").shouldHave(text("Loyalty Labs: Разработка IT решений для бизнеса на заказ"));
