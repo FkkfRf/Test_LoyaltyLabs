@@ -1,4 +1,4 @@
-package testSite;
+package site;
 
 import base.BaseTest;
 import com.codeborne.selenide.Configuration;

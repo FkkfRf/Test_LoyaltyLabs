@@ -17,7 +17,6 @@ public class BaseSearchTest {
     @BeforeAll
     static void setUp() {
         ProjectProvider.configSearch();
-
         step("Устанавливаем интеграцию с Selenide", () -> {
             SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         });
@@ -41,7 +40,11 @@ public class BaseSearchTest {
 
     @AfterAll
     static void CloseWebDriver() {
-        step("закрываем вебдрайвер", () -> Selenide.closeWebDriver());
+        step("закрываем вебдрайвер", () -> {
+                    Selenide.closeWebDriver();
+
+                }
+                );
     }
 
 }

@@ -1,6 +1,8 @@
-package searchSite;
+package search;
 
 import base.BaseSearchTest;
+import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -21,7 +23,9 @@ public class SearchAndOpenSiteTest extends BaseSearchTest {
     @DisplayName("Поиск сайта loylabs.ru")
     @Test
     void SearchSiteInGoogle() {
+
         step("Открываем поисковик google ", () -> open(baseUrl));
+
         step("проверяем наличие Loyalty Labs в результатах поиска", () -> {
             $("[name=q]").setValue("Loyalty Labs").pressEnter();
             $("[id=search]").shouldHave(text("Loyalty Labs: Разработка IT решений для бизнеса на заказ"));
