@@ -1,6 +1,7 @@
 package search;
 
 import base.BaseSearchTest;
+import com.codeborne.selenide.Selenide;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -25,6 +26,8 @@ public class SearchAndOpenSiteTest extends BaseSearchTest {
         step("Открываем поисковик google ", () -> open(baseUrl));
 
         step("проверяем наличие Loyalty Labs в результатах поиска", () -> {
+            Selenide.clearBrowserCookies();
+            Selenide.clearBrowserLocalStorage();
             $("[name=q]").setValue("Loyalty Labs").pressEnter();
             $("[id=search]").shouldHave(text("Loyalty Labs: "));
         });
