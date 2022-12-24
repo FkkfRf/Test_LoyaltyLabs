@@ -17,9 +17,7 @@ public class BaseSearchTest {
     @BeforeAll
     static void setUp() {
         ProjectProvider.configSearch();
-        step("Устанавливаем интеграцию с Selenide", () -> {
-            SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
-        });
+        step("Устанавливаем интеграцию с Selenide", () -> SelenideLogger.addListener("AllureSelenide", new AllureSelenide()));
         step("Устанавливаем конфигурацию", () -> {
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setCapability("enableVNC", true);
@@ -41,8 +39,8 @@ public class BaseSearchTest {
     @AfterAll
     static void CloseWebDriver() {
         step("закрываем вебдрайвер", () -> {
+                    Selenide.closeWindow();
                     Selenide.closeWebDriver();
-
                 }
                 );
     }

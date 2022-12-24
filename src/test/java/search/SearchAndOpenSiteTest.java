@@ -5,7 +5,6 @@ import com.codeborne.selenide.Selenide;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selectors.byText;
@@ -29,10 +28,10 @@ public class SearchAndOpenSiteTest extends BaseSearchTest {
             Selenide.clearBrowserCookies();
             Selenide.clearBrowserLocalStorage();
             $("[name=q]").setValue("Loyalty Labs").pressEnter();
-            $("[id=search]").shouldHave(text("Loyalty Labs: "));
+            $("[id=search]").shouldHave(text("Loyalty Labs: Разработка IT решений для бизнеса на заказ"));
         });
         step("Открываем сайт из результатов поиска, проверяем заголовок", () -> {
-            $(byText("Loyalty Labs: ")).click();
+            $(byText("Loyalty Labs: Разработка IT решений для бизнеса на заказ")).click();
             $(".elementor-heading-title").shouldHave(text("с гарантией результата"));
         });
 

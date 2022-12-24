@@ -44,7 +44,7 @@ tasks.withType(Test) {
     useJUnitPlatform()
     systemProperties(System.getProperties())
     // устанавливаем язык хрома - русский
-    systemProperty "chromoptions.prefs","intl.accept_languages=ru"
+    systemProperty "chromoptions.prefs","intl.accept_languages=en"
 
     testLogging {
         lifecycle {

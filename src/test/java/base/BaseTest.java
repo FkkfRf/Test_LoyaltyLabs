@@ -40,7 +40,11 @@ public class BaseTest {
 
     @AfterAll
     static void CloseWebDriver() {
-        step("закрываем вебдрайвер", () -> Selenide.closeWebDriver());
+        step("закрываем вебдрайвер", () -> {
+                    Selenide.closeWindow();
+                    Selenide.closeWebDriver();
+                }
+        );
     }
 
 }
