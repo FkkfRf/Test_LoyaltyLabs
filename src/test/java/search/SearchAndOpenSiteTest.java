@@ -26,10 +26,10 @@ public class SearchAndOpenSiteTest extends BaseSearchTest {
 
         step("проверяем наличие Loyalty Labs в результатах поиска", () -> {
             $("[name=q]").setValue("Loyalty Labs").pressEnter();
-            $("[id=search]").shouldHave(text("Loyalty Labs: Разработка IT решений для бизнеса на заказ"));
+            $("[id=search]").shouldHave(text("Loyalty Labs: "));
         });
         step("Открываем сайт из результатов поиска, проверяем заголовок", () -> {
-            $(byText("Loyalty Labs: Разработка IT решений для бизнеса на заказ")).click();
+            $(byText("Loyalty Labs: ")).click();
             $(".elementor-heading-title").shouldHave(text("с гарантией результата"));
         });
 
