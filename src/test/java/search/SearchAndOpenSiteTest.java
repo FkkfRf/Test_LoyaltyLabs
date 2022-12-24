@@ -1,8 +1,6 @@
 package search;
 
 import base.BaseSearchTest;
-import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.Selenide;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
