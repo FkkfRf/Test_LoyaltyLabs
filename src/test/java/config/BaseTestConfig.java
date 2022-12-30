@@ -12,10 +12,6 @@ public interface BaseTestConfig extends Config {
     @DefaultValue("https://loylabs.ru/")
     String getBaseUrl();
 
-    @Key("searchUrl")
-    @DefaultValue("https://google.com/")
-    String getSearchUrl();
-
     @Key("browser")
     @DefaultValue("CHROME")
     String getBrowser();

@@ -47,7 +47,5 @@ public class LoyLabsSiteTests extends BaseTest{
         $(byText("Все услуги →")).click();
         $("h1").shouldHave(text("Услуги"));
         $("h2").shouldHave(text("Как мы работаем"));
-
-
     }
 }
