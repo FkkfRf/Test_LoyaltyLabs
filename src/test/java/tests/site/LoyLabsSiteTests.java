@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.ValueSource;
-import page.MainPage;
+import page.Page;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
@@ -22,36 +22,48 @@ public class LoyLabsSiteTests extends BaseTest {
     @ValueSource(strings = {"Услуги", "Проекты", "Блог", "О компании", "Контакты"})
     @ParameterizedTest(name = "Выбран {0}")
     void openPagesFromTopMenu(String elementor) {
-        step("Открываем тестируемый сайт в заданной конфигурации браузера", () -> {
-            MainPage.openPage();
-            MainPage.testMenuElements(elementor);
+        step("Открываем сайт в заданной конфигурации браузера", () -> {
+            Page.openPage();
+        });
+        step("проверяем выбор элемента", () -> {
+            Page.testMenuElements(elementor);
             $("h1").shouldHave(text(String.valueOf(elementor)));
-            MainPage.clickLogoElement();
-            MainPage.testButtonClick("Заказать бесплатную консультацию");
+            Page.clickLogoElement();
+            Page.testButtonClick("Заказать бесплатную консультацию");
         });
     }
+
     @Feature("Проверка главной страницы сайта")
-    @Story("Раздел 'В чем мы сильны'")
+    @Story("Проверка элементов разделов")
     @Owner("FkkfRf")
     @Link(url = "https://loylabs.ru/")
-    @DisplayName("Разработка IT решений")
+    @DisplayName("'В чем мы сильны'")
     @CsvFileSource(resources = "/developmentSourse.csv", numLinesToSkip = 0)
     @ParameterizedTest(name = "Выбран {0} {1}")
     void selectDevelomentTest(String elementor, String header) {
-        MainPage.openPage();
-        MainPage.testClickableElements(elementor);
-        $("h1").shouldHave(text(String.valueOf(header)));
-        MainPage.clickLogoElement();
+        step("Открываем сайт в заданной конфигурации браузера", () -> {
+            Page.openPage();
+        });
+        step("Проверяем выбор элемента", () -> {
+            Page.testClickableElements(elementor);
+            $("h1").shouldHave(text(String.valueOf(header)));
+            Page.clickLogoElement();
+        });
     }
+
     @Feature("Проверка главной страницы сайта")
-    @Story("Раздел 'Проекты'")
+    @Story("Проверка элементов разделов")
     @Owner("FkkfRf")
     @Link(url = "https://loylabs.ru/")
-    @DisplayName("Разработка IT решений")
+    @DisplayName("Раздел 'Проекты'")
     @Test
     void selectProjectsTest() {
-        MainPage.openPage();
-        MainPage.testButtonClick("Все проекты");
-        MainPage.clickLogoElement();
+        step("Открываем сайт в заданной конфигурации браузера", () -> {
+            Page.openPage();
+        });
+        step("Проверяем выбор элемента", () -> {
+            Page.testButtonClick("Все проекты");
+            Page.clickLogoElement();
+        });
     }
 }
