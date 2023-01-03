@@ -3,9 +3,9 @@ package config;
 import org.aeonbits.owner.Config;
 
 @Config.Sources({
-        "classpath:config/local.properties"
-        //"classpath:config/${env}.properties",
-        //"classpath:config/${env}.properties"
+        //"classpath:config/local.properties"
+        "classpath:config/${env}.properties",
+        "classpath:config/${env}.properties"
 })
 public interface BaseTestConfig extends Config {
     @Key("baseUrl")
