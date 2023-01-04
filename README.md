@@ -114,7 +114,7 @@ gradle test -Denv=remote
 значок <img width="2%" title="Allure Report" src="images/logo/AllureREport-logo.svg"><code><strong>*Allure
 Report*</strong></code>, кликнув по которому, откроется страница с сформированным html-отчетом.*
 
-##  :cyclone: Отчет о результатах тестирования в [Allure Report](https://jenkins.autotests.cloud/job/AUTO-638/8/allure/) <img width="4%" title="Allure Report" src="images/logo/AllureReport-logo.svg">
+##  :cyclone: Отчет о результатах тестирования в [Allure Report](https://jenkins.autotests.cloud/job/C15-FkkfRf-Test-LoyaltyLabs/allure/) <img width="4%" title="Allure Report" src="images/logo/AllureReport-logo.svg">
 
 #### ✓ Главная страница Allure-отчета содержит следующие информационные блоки:
 
@@ -141,7 +141,7 @@ Report*</strong></code>, кликнув по которому, откроетс�
   <img src="images/screenshots/Allure2.png" alt="Allure Report" width="900">
 </p>
 
-##  :cyclone:  Интеграция с [Allure TestOps](https://allure.autotests.cloud/launch/10145) <img width="4%" title="Allure TestOPS" src="images/logo/AllureTO-logo.svg">
+##  :cyclone:  Интеграция с [Allure TestOps](https://allure.autotests.cloud/launch/18025) <img width="4%" title="Allure TestOPS" src="images/logo/AllureTO-logo.svg">
 
 #### ✓ Основной дашборд
 
