@@ -101,13 +101,13 @@ gradle test -Denv=remote
 *Для запуска теста с необходимыми параметрами, указываем  Property файл в настройках сборки проета *
 
 <p align="center">
-  <img src="images/screenshots/JenkinsParam.png" alt="job" width="800">
+  <img src="images/screenshots/JenkinsParam.PNG" alt="job" width="800">
 </p>
 
 *Основная страница проекта в Jenkins*
 
 <p align="center">
-  <img src="images/screenshots/JenkinsMain.png" alt="job" width="800">
+  <img src="images/screenshots/JenkinsMain.PNG" alt="job" width="800">
 </p>
 
 *После выполнения сборки, в блоке <code><strong>*История сборок*</strong></code> напротив номера сборки появится
@@ -133,12 +133,12 @@ Report*</strong></code>, кликнув по которому, откроетс�
 > <code>*EXECUTORS*</code> - отображает исполнителя текущей сборки (ссылка на сборку в Jenkins)
 
 <p align="center">
-  <img src="images/screenshots/Allure1.png" alt="Allure Report" width="900">
+  <img src="images/screenshots/Allure1.PNG" alt="Allure Report" width="900">
 </p>
 
 #### ✓ В разделе Behaviors тесты отображаются  сгруппироваными в многоуровневый список:*
 <p align="center">
-  <img src="images/screenshots/Allure2.png" alt="Allure Report" width="900">
+  <img src="images/screenshots/Allure2.PNG" alt="Allure Report" width="900">
 </p>
 
 ##  :cyclone:  Интеграция с [Allure TestOps](https://allure.autotests.cloud/launch/18025) <img width="4%" title="Allure TestOPS" src="images/logo/AllureTO-logo.svg">
@@ -146,13 +146,13 @@ Report*</strong></code>, кликнув по которому, откроетс�
 #### ✓ Основной дашборд
 
 <p align="center">
-  <img src="images/screenshots/TestOpsMainDashboard.png" alt="dashboards" width="900">
+  <img src="images/screenshots/TestOpsMainDashboard.PNG" alt="dashboards" width="900">
 </p>
 
 #### ✓ Тест-кейсы
 
 <p align="center">
-  <img src="images/screens/Alure_TO3.png" alt="test cases" width="900">
+  <img src="images/screenshots/TestOpsTestCases.PNG" alt="test cases" width="900">
 </p>
 
 ##  :cyclone:  Интеграция с [Jira](https://jira.autotests.cloud/browse/AUTO-638) <img width="4%" title="Jira" src="images/logo/Jira-logo.svg">
@@ -166,7 +166,7 @@ Report*</strong></code>, кликнув по которому, откроетс�
 > После завершения сборки специальный бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом о прогоне тестов.
 
 <p align="center">
-<img title="Telegram Notifications" src="images/screens/Telegram.png">
+<img title="Telegram Notifications" src="images/screens/Telegram.PNG">
 </p>
 
 ##  :cyclone:  Пример запуска теста в Selenoid <img width="4%" title="Selenoid" src="images/logo/Selenoid-logo.svg">
