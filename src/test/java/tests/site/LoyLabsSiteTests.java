@@ -41,7 +41,7 @@ public class LoyLabsSiteTests extends BaseTest {
     @Link(url = "https://loylabs.ru/")
     @DisplayName("Раздел 'В чем мы сильны'")
     @CsvFileSource(resources = "/developmentSourse.csv", numLinesToSkip = 0)
-    @ParameterizedTest(name = "Выбран {0} {1}")
+    @ParameterizedTest(name = "Выбран {0}")
     void selectDevelomentTest(String elementor, String header) {
         step("Открываем сайт", () -> {
             MainPage.openPage();
@@ -52,24 +52,22 @@ public class LoyLabsSiteTests extends BaseTest {
         step("Проверяем название открывшейся страницы", () -> {
             $("h1").shouldHave(text(String.valueOf(header)));
         });
-
-
     }
 
     @Feature("Проверка главной страницы сайта")
     @Story("Проверка элементов разделов")
     @Owner("FkkfRf")
-    @Link(url = "https://loylabs.ru/")
-    @DisplayName("Раздел 'Проекты'")
+    @Link(url = "https://loylabs.ru/ ")
+    @DisplayName(" Раздел 'Проекты'")
     @Test
-    void selectProjectsTest() {
+    void selectProjectsFromButtonTest() {
         step("Открываем сайт", () -> {
             MainPage.openPage();
         });
-        step("Кликаем кнопку 'Все проекты' ", () -> {
+        step("Кликаем кнопку 'Все проекты'", () -> {
             MainPage.clickButton("Все проекты");
         });
-        step("Проверяем название открывшейся страницы", () -> {
+        step("Проверяем название открывшейся страницы ", () -> {
             $("h1").shouldHave(text("Проекты"));
         });
     }
