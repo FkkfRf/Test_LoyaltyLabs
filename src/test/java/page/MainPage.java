@@ -4,28 +4,28 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selenide.*;
 
-public class Page {
+public class MainPage {
     private final static String TITLE_TEXT = "Разработка IT решений";
-    public static Page openPage() {
+    public MainPage openPage() {
         open(baseUrl);
         $(".elementor-heading-title").shouldHave(text(TITLE_TEXT));
-        return null;
+        return this;
     }
-    public static Page clickLogoElement() {
+    public MainPage clickLogoElement() {
         $(".astra-logo-svg").click();
         $(".elementor-heading-title").shouldHave(text(TITLE_TEXT));
-        return null;
+        return this;
     }
-    public static Page testMenuElements(String nameMenuElement){
+    public MainPage clickMenuElement(String nameMenuElement){
         $$(".menu-item ").findBy(text(nameMenuElement)).click();
-        return null;
+        return this;
     }
-    public static Page testClickableElements(String nameClicableElement) {
+    public MainPage clickElement(String nameClicableElement) {
         $$(".make-column-clickable-elementor").findBy(text(nameClicableElement)).click();
-        return null;
+        return this;
     }
-    public static Page testButtonClick(String nameButtonElement){
+    public MainPage clickButton(String nameButtonElement){
         $$(".elementor-button").findBy(text(nameButtonElement)).click();
-        return null;
+        return this;
     }
 }
