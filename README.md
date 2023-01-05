@@ -173,6 +173,6 @@ Report*</strong></code>, кликнув по которому, откроетс�
 
 > К каждому тесту в отчете прилагается видео.
 <p align="center">
-  <img title="Selenoid Video" src="images/screenshots/Selenoid.mp4" width="500">
+  <img title="Selenoid Video" src="images/screenshots/Selenoid.gif" width="500">
 </p>
 
