@@ -35,7 +35,7 @@ public class LoyLabsSiteTests extends BaseTest {
         });
     }
 
-    @Feature("Проверка главной страницы сайта")
+    @Feature("Проверка главной страницы сайта ")
     @Story("Проверка элементов разделов")
     @Owner("FkkfRf")
     @Link(url = "https://loylabs.ru/")
@@ -46,15 +46,15 @@ public class LoyLabsSiteTests extends BaseTest {
         step("Открываем сайт", () -> {
             MainPage.openPage();
         });
-        step("Кликаем элемент раздела", () -> {
+        step("Кликаем элемент раздела ", () -> {
             MainPage.clickElement(elementor);
         });
-        step("Проверяем название открывшейся страницы", () -> {
+        step("Проверяем название открывшейся страницы ", () -> {
             $("h1").shouldHave(text(String.valueOf(header)));
         });
     }
 
-    @Feature("Проверка главной страницы сайта")
+    @Feature("Проверка главной страницы сайта ")
     @Story("Проверка элементов разделов")
     @Owner("FkkfRf")
     @Link(url = "https://loylabs.ru/ ")
