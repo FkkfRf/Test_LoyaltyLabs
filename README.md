@@ -13,48 +13,45 @@
 >
 > - [Запуск тестов из терминала](#cyclone-Запуск-тестов-из-терминала)
 >
-> - [Запуск тестов в Jenkins](#-запуск-тестов-в-jenkins)
+> - [Запуск тестов в Jenkins](#cyclone-запуск-тестов-в-jenkins)
 >
-> - [Отчет о результатах тестирования в Allure Report](#-отчет-о-результатах-тестирования-в-allure-report)
+> - [Отчет о результатах тестирования в Allure Report](#cyclone-отчет-о-результатах-тестирования-в-allure-report)
 >
-> - [Интеграция с Allure TestOps](#-интеграция-с-allure-testops)
+> - [Интеграция с Allure TestOps](#cyclone-интеграция-с-allure-testops)
 >
-> - [Интеграция с Jira](#-интеграция-с-jira)
+> - [Интеграция с Jira](#cyclone-интеграция-с-jira)
 >
-> - [Уведомления в Telegram с использованием бота](#-уведомления-в-telegram-с-использованием-бота)
+> - [Уведомления в Telegram с использованием бота](#cyclone-уведомления-в-telegram-с-использованием-бота)
 >
-> - [Пример запуска теста в Selenoid](#-пример-запуска-теста-в-selenoid)
+> - [Пример запуска теста в Selenoid](#cyclone-пример-запуска-теста-в-selenoid)
 
 ##  :cyclone: Технологии и инструменты
 
 <p  align="center"
 
-<code><img width="5%" title="GitHub" src="images/logo/GitHub-logo.svg"></code>
-<code><img width="5%" title="IntelliJ IDEA" src="images/logo/IntelijIDEA-logo.svg"></code>
-<code><img width="5%" title="Java" src="images/logo/Java-logo.svg"></code>
-<code><img width="5%" title="Selenide" src="images/logo/Selenide-logo.svg"></code>
-<code><img width="5%" title="Gradle" src="images/logo/Gradle-logo.svg"></code>
-<code><img width="5%" title="Junit5" src="images/logo/JUnit5-logo.svg"></code>
-<code><img width="5%" title="Selenoid" src="images/logo/Selenoid-logo.svg"></code>
-<code><img width="5%" title="Allure Report" src="images/logo/AllureReport-logo.svg"></code>
-<code><img width="5%" title="Allure TestOps" src="images/logo/AllureTO-logo.svg"></code>
-<code><img width="5%" title="RestAssured" src="images/logo/RestAssured-logo.svg"></code>
-<code><img width="5%" title="Jenkins" src="images/logo/Jenkins-logo.svg"></code>
-<code><img width="5%" title="Jira" src="images/logo/Jira-logo.svg"></code>
-<code><img width="5%" title="Telegram" src="images/logo/Telegram-logo.svg"></code>
+<code><img width="4%" title="GitHub" src="images/logo/GitHub-logo.svg"></code>
+<code><img width="4%" title="IntelliJ IDEA" src="images/logo/IntelijIDEA-logo.svg"></code>
+<code><img width="4%" title="Java" src="images/logo/Java-logo.svg"></code>
+<code><img width="4%" title="Selenide" src="images/logo/Selenide-logo.svg"></code>
+<code><img width="4%" title="Gradle" src="images/logo/Gradle-logo.svg"></code>
+<code><img width="4%" title="Junit5" src="images/logo/JUnit5-logo.svg"></code>
+<code><img width="4%" title="Selenoid" src="images/logo/Selenoid-logo.svg"></code>
+<code><img width="4%" title="Allure Report" src="images/logo/AllureReport-logo.svg"></code>
+<code><img width="4%" title="Allure TestOps" src="images/logo/AllureTO-logo.svg"></code>
+<code><img width="4%" title="Jenkins" src="images/logo/Jenkins-logo.svg"></code>
+<code><img width="4%" title="Telegram" src="images/logo/Telegram-logo.svg"></code>
 </p>
 
->- *В данном проекте использовались:*
->- *<code><strong>*Java*</strong></code> с использованием фреймворка <code><strong>*Selenide*</strong></code> - автотесты для UI*
+> - *В данном проекте использовались:*
+>- *<code><strong>*Java*</strong></code> с использованием фреймворка <code><strong>*Selenide*</strong></code> -
+   автотесты для UI*
 >- *<code><strong>*Gradle*</strong></code> - сборка проекта*
 >- *<code><strong>*JUnit 5*</strong></code> - фреймворк для модульного тестирования*
->- *<code><strong>REST Assured</strong></code> - тестирования REST-сервисов*
 >- *<code><strong>*Jenkins*</strong></code> - запуск тестов*
 >- *<code><strong>*Selenoid*</strong></code> - запуска браузеров в контейнерах <code><strong>*Docker*</strong></code>.*
 >- *<code><strong>*Allure Report*</strong></code> - визуализации результатов тестирования*
 >- *<code><strong>*Allure TestOps*</strong></code> - управление тестами*
->- *<code><strong>*Jira, Telegram Bot*</strong></code> - уведомление  о результатах тестирования*
-
+>- *<code><strong>*Jira, Telegram Bot*</strong></code> - уведомление о результатах тестирования*
 
 ## :cyclone: Реализованы проверки
 
@@ -74,45 +71,76 @@
 
 ##  :cyclone: Запуск тестов из терминала
 
+Чтобы запуск тестов легче конфигурирровать, без внесения правок в код, использовалась библиотека owner
+
+В этом случае параметры запуска выносятся в файлы *properties*
+
+> **Property**   файл расположен в директории   **src/test/resources/config/**
+>
 #### ✓ Локальный запуск тестов
 
 ```bash
 gradle test -Denv=local  
 ```
-
 #### ✓ Удаленный запуск тестов
 
 ```bash
 gradle test -Denv=remote 
 ```
-> где <code>remote</code> определяет <code>property</code> файл, в котором указаны параметры для запуска теста:
 
-> <code>baseUrl</code> – адрес удаленного сервера, на котором будут запускаться тесты.
->
-> <code>browser</code> – браузер, в котором будут выполняться тесты
->
-> <code>browserVersion</code> – версия браузера, в которой будут выполняться тесты
->
-> <code>browserSize</code> – размер окна браузера, в котором будут выполняться тесты
+> где **remote**   определяет **property**  файл, в котором указаны параметры для запуска теста:
 
-> <code>Property</code> файл расположен в директории <code>src/test/resources/config/</code>. 
+> **baseUrl** – адрес удаленного сервера, на котором будут запускаться тесты.
+>
+> **browser** – браузер, в котором будут выполняться тесты
+>
+> **browserVersion** – версия браузера, в которой будут выполняться тесты
+>
+> **browserSize** – размер окна браузера, в котором будут выполняться тесты
+>
+> **remote** –  адрес удаленного сервера, на котором будут запускаться тесты
 
-##  :cyclone: Запуск тестов в  [Jenkins](https://jenkins.autotests.cloud/job/C15-FkkfRf-Test-LoyaltyLabs/) <img width="4%" title="Jenkins" src="images/logo/Jenkins-logo.svg">
-*Для запуска теста с необходимыми параметрами, указываем  Property файл в настройках сборки проета *
+##  :cyclone: Запуск тестов в Jenkins
+<img width="4%" title="Jenkins" src="images/logo/Jenkins-logo.svg"> [Сборка в Jenkins](https://jenkins.autotests.cloud/job/C15-FkkfRf-Test-LoyaltyLabs/) 
+
+Для обеспечения мобильности выбора параметров при запуске теста из Jenkins,
+
+в настройках сборки задаём варианты параметров для запуска:
 
 <p align="center">
-  <img src="images/screenshots/JenkinsParam.PNG" alt="job" width="800">
+  <img src="images/screenshots/JenkinsParam.PNG" alt="job">
 </p>
 
-*Основная страница проекта в Jenkins*
+В этом лучае скрипт запуска из Jenkins будет следующим:
+
+> clean
+>
+> test
+>
+> -D**browse**r=${BROWSER}
+>
+> -D**browserVersion**=${BROWSER_VER}
+>
+> -D**browserSize**=${BROWSER_SIZE}
+>
+> -D**remote**=${REMOTE_URL}
+
+Затем выбираем "Собрать с параметрами" и указываем необходимые
 
 <p align="center">
-  <img src="images/screenshots/JenkinsMain.PNG" alt="job" width="800">
+  <img src="images/screenshots/JenkinsParam2.PNG" alt="job">
 </p>
 
-*После выполнения сборки, в блоке <code><strong>*История сборок*</strong></code> напротив номера сборки появится
-значок <img width="2%" title="Allure Report" src="images/logo/AllureREport-logo.svg"><code><strong>*Allure
-Report*</strong></code>, кликнув по которому, откроется страница с сформированным html-отчетом.*
+
+### Основная страница проекта в Jenkins
+
+<p align="center">
+  <img src="images/screenshots/JenkinsMain.PNG" alt="job">
+</p>
+
+После выполнения сборки, в блоке <code><strong>*История сборок*</strong></code> напротив номера сборки появится
+значок <img width="2%" title="Allure Report" src="images/logo/AllureReport-logo.svg"><code><strong>*Allure
+Report*</strong></code>, кликнув по которому, откроется страница с сформированным html-отчетом.
 
 ##  :cyclone: Отчет о результатах тестирования в [Allure Report](https://jenkins.autotests.cloud/job/C15-FkkfRf-Test-LoyaltyLabs/allure/) <img width="4%" title="Allure Report" src="images/logo/AllureReport-logo.svg">
 
