@@ -11,7 +11,7 @@
 >
 > - [Реализованы проверки](#cyclone-реализованы-проверки)
 >
-> - [Запуск тестов из терминала](#cyclone-Запуск-тестов-из-терминала)
+> - [Запуск тестов из терминала](#cyclone-запуск-тестов-из-терминала)
 >
 > - [Запуск тестов в Jenkins](#cyclone-запуск-тестов-в-jenkins)
 >
@@ -69,7 +69,7 @@
 >- [x] *На главной странице проверить элементы раздела "Проекты"*
 >- [x] *При клике на кнопку "Все проекты"должна открыться страница с заголовком "Проекты"*
 
-##  :cyclone: Запуск тестов из терминала
+## :cyclone: Запуск тестов из терминала
 
 Чтобы запуск тестов легче конфигурирровать, без внесения правок в код, использовалась библиотека owner
 
@@ -100,7 +100,8 @@ gradle test -Denv=remote
 >
 > **remote** –  адрес удаленного сервера, на котором будут запускаться тесты
 
-##  :cyclone: Запуск тестов в Jenkins
+## :cyclone: Запуск тестов в Jenkins
+
 <img width="4%" title="Jenkins" src="images/logo/Jenkins-logo.svg"> [Сборка в Jenkins](https://jenkins.autotests.cloud/job/C15-FkkfRf-Test-LoyaltyLabs/) 
 
 Для обеспечения мобильности выбора параметров при запуске теста из Jenkins,
@@ -142,7 +143,9 @@ gradle test -Denv=remote
 значок <img width="2%" title="Allure Report" src="images/logo/AllureReport-logo.svg"><code><strong>*Allure
 Report*</strong></code>, кликнув по которому, откроется страница с сформированным html-отчетом.
 
-##  :cyclone: Отчет о результатах тестирования в [Allure Report](https://jenkins.autotests.cloud/job/C15-FkkfRf-Test-LoyaltyLabs/allure/) <img width="4%" title="Allure Report" src="images/logo/AllureReport-logo.svg">
+## :cyclone: Отчет о результатах тестирования в Allure Report
+
+<img width="4%" title="Allure Report" src="images/logo/AllureReport-logo.svg"> [Allure Report] (https://jenkins.autotests.cloud/job/C15-FkkfRf-Test-LoyaltyLabs/allure/)
 
 #### ✓ Главная страница Allure-отчета содержит следующие информационные блоки:
 
@@ -169,9 +172,10 @@ Report*</strong></code>, кликнув по которому, откроетс�
   <img src="images/screenshots/Allure2.PNG" alt="Allure Report" width="900">
 </p>
 
-##  :cyclone:  Интеграция с [Allure TestOps](https://allure.autotests.cloud/launch/18025) <img width="4%" title="Allure TestOPS" src="images/logo/AllureTO-logo.svg">
+## :cyclone:  Интеграция с Allure TestOPS
+<img width="4%" title="Allure TestOPS" src="images/logo/AllureTO-logo.svg"> [Allure TestOps]https://allure.autotests.cloud/launch/18025)
 
-#### ✓ Основной дашборд
+#### ✓ Дашборд
 
 <p align="center">
   <img src="images/screenshots/TestOpsMainDashboard.PNG" alt="dashboards" width="900">
@@ -183,16 +187,22 @@ Report*</strong></code>, кликнув по которому, откроетс�
   <img src="images/screenshots/TestOpsTestCases.PNG" alt="test cases" width="900">
 </p>
 
-##  :cyclone:  Интеграция с [Jira](https://jira.autotests.cloud/browse/AUTO-638) <img width="4%" title="Jira" src="images/logo/Jira-logo.svg">
+## :cyclone:  Интеграция с Jira
+<img width="4%" title="Jira" src="images/logo/Jira-logo.svg"> [Jira](https://jira.autotests.cloud/browse/AUTO-638) 
 
 <p align="center">
-  <img src="images/screens/Jira.png" alt="jira" width="1000">
+  <img src="images/screens/Jira.PNG" alt="jira" width="1000">
 </p>
 
-##  :cyclone: Уведомления в Telegram с использованием бота <img width="4%" title="Telegram" src="images/logo/Telegram-logo.svg">
 
-> После завершения сборки специальный бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом о прогоне тестов.
+## :cyclone: Уведомления в Telegram с использованием бота
 
+После завершения сборки специальный бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет
+сообщение с отчетом о прогоне тестов.
+
+<p align="left">
+<img width="4%" title="Telegram" src="images/logo/Telegram-logo.svg">
+</p>
 <p align="center">
 <img title="Telegram Notifications" src="images/screenshots/Notification.PNG">
 </p>
