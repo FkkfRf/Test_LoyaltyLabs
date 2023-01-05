@@ -16,7 +16,7 @@ import static io.qameta.allure.Allure.step;
 public class LoyLabsSiteTests extends BaseTest {
     MainPage MainPage = new MainPage();
 
-    @Feature("Проверка главной страницы сайта")
+    @Feature("Проверка  главной страницы сайта")
     @Story("Открытие страниц через пункты верхнего меню")
     @Owner("FkkfRf")
     @Link(url = "https://loylabs.ru/")
