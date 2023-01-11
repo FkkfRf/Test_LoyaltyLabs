@@ -5,10 +5,10 @@ import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import config.ProjectProvider;
 import io.qameta.allure.selenide.AllureSelenide;
-import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
+
 import static io.qameta.allure.Allure.step;
 
 import helpers.Attach;
@@ -36,16 +36,9 @@ public class BaseTest {
             Attach.browserConsoleLogs();
             Attach.addVideo();
         });
-    }
-
-    @AfterAll
-    static void CloseWebDriver() {
         step("закрываем вебдрайвер", () -> {
-                    Selenide.closeWindow();
-                    Selenide.closeWebDriver();
-                }
-        );
+            Selenide.closeWebDriver();
+        });
     }
-
 }
 
