@@ -172,7 +172,7 @@ Report*</strong></code>, кликнув по которому, откроетс�
   <img src="images/screenshots/Allure2.PNG" alt="Allure Report" width="900">
 </p>
 
-## :cyclone:  Интеграция с Allure TestOPS
+## :cyclone: Интеграция с Allure TestOPS
 <img width="4%" title="Allure TestOPS" src="images/logo/AllureTO-logo.svg"> [Allure TestOps]https://allure.autotests.cloud/launch/18025)
 
 #### ✓ Дашборд
@@ -187,7 +187,7 @@ Report*</strong></code>, кликнув по которому, откроетс�
   <img src="images/screenshots/TestOpsTestCases.PNG" alt="test cases" width="900">
 </p>
 
-## :cyclone:  Интеграция с Jira
+## :cyclone: Интеграция с Jira
 <img width="4%" title="Jira" src="images/logo/Jira-logo.svg"> [Jira](https://jira.autotests.cloud/browse/AUTO-638) 
 
 <p align="center">
