@@ -173,7 +173,7 @@ Report*</strong></code>, кликнув по которому, откроетс�
 </p>
 
 ## :cyclone: Интеграция с Allure TestOPS
-<img width="4%" title="Allure TestOPS" src="images/logo/AllureTO-logo.svg"> [Allure TestOps]https://allure.autotests.cloud/launch/18025)
+<img width="4%" title="Allure TestOPS" src="images/logo/AllureTO-logo.svg"> [Allure TestOps](https://allure.autotests.cloud/launch/18226)
 
 #### ✓ Дашборд
 
