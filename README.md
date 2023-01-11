@@ -145,7 +145,7 @@ Report*</strong></code>, кликнув по которому, откроетс�
 
 ## :cyclone: Отчет о результатах тестирования в Allure Report
 
-<img width="4%" title="Allure Report" src="images/logo/AllureReport-logo.svg"> [Allure Report] (https://jenkins.autotests.cloud/job/C15-FkkfRf-Test-LoyaltyLabs/allure/)
+<img width="4%" title="Allure Report" src="images/logo/AllureReport-logo.svg"> [Allure Report](https://jenkins.autotests.cloud/job/C15-FkkfRf-Test-LoyaltyLabs/allure/)
 
 #### ✓ Главная страница Allure-отчета содержит следующие информационные блоки:
 
