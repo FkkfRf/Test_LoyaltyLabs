@@ -1,8 +1,8 @@
 # Проект по автоматизации тестирования
 # сайта компании Loyalty Labs
 
-![Logo-LoyLabs.svg](images/icons/Logo-LoyLabs.svg)
-### <a target="_blank" href="https://loylabs.ru/">© Loyalty Labs 2013-2020</a>
+
+### <a target="_blank" href="https://loylabs.ru/">© Loyalty Labs 2013-2020</a> 
 
 ![Logo-Sloj.svg](images/icons/Logo-Sloj.svg)
 # :cyclone:	Содержание
