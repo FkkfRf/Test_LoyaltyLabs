@@ -1,5 +1,4 @@
-# Проект по автоматизации тестирования
-# сайта компании Loyalty Labs
+## Проект по автоматизации тестирования сайта компании Loyalty Labs
 
 
 ### <a target="_blank" href="https://loylabs.ru/">© Loyalty Labs 2013-2020</a> 
